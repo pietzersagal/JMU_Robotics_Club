@@ -1,0 +1,8 @@
+This is a short file telling how to get our Rover Robtics 2WD aka B1gB0t
+
+Run the following:
+ros2 launch roverrobotics_driver pro.launch.py 
+ros2 run teleop_twist_keyboard teleop_twist_keyboard (or the program you want to run)
+
+TODO:
+link github where pro.launch.py can be found
