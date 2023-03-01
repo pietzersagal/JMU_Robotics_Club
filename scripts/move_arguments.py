@@ -13,12 +13,12 @@ class Publisher(Node):
         
     def timer_callback(self):
         move = Twist()
-        move.linear.x = sys.argv[0]
+        move.linear.x = float(sys.argv[1])
         move.linear.y = 0.0
         move.linear.z = 0.0
         move.angular.x = 0.0
         move.angular.y = 0.0
-        move.angular.z = sys.argv[1]
+        move.angular.z = float(sys.argv[2])
         
         self.publisher.publish(move)
         self.get_logger().info('Moving Bot: %d' % move)
