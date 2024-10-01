@@ -15,7 +15,7 @@ class Publisher(Node):
         move = Twist()
         move.linear.x = float(sys.argv[1])
         move.linear.y = 0.0
-        move.linear.z = 1.0
+        move.linear.z = 0.0
         move.angular.x = 0.0
         move.angular.y = 0.0
         move.angular.z = float(sys.argv[2])
