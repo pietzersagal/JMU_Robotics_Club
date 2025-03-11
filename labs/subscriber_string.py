@@ -7,7 +7,7 @@ class Subscriber(Node):
     
     def __init__(self):
         super().__init__('subscriber')
-        self.subscription = self.create_subscription(String, 'custom', self.subscriber_callback, 10)
+        self.subscription = self.create_subscription(String, 'customtopic', self.subscriber_callback, 10)
         
     def subscriber_callback(self, msg):
         #if(msg.linear.x != 0.0)
