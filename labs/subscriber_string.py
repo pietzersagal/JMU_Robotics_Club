@@ -10,7 +10,6 @@ class Subscriber(Node):
         self.subscription = self.create_subscription(String, 'customtopic', self.subscriber_callback, 10)
         
     def subscriber_callback(self, msg):
-        #if(msg.linear.x != 0.0)
         self.get_logger().info("%s" % str(msg.data))
         
 def main(args=None):
